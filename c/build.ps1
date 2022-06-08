@@ -1,0 +1,1 @@
+clang -I. -Os -target wasm32 -nostartfiles -nodefaultlibs -nostdinc++ -Wno-unused-command-line-argument -DNDEBUG -D__WAJIC__ -fvisibility=hidden -fno-rtti -fno-exceptions -fno-threadsafe-statics -Xlinker -strip-all -Xlinker -gc-sections -Xlinker -no-entry -Xlinker -allow-undefined -Xlinker -export=main -Xlinker -export=sum -Xlinker -export=init ai.c -o ai.wasm

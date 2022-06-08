@@ -1,0 +1,1 @@
+tinygo build -o ai.wasm -target wasm ./ai.go
